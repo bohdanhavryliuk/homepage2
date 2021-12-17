@@ -145,14 +145,13 @@ body {
 }
 
 .intro__icon-wrapper {
-    margin-right: 30px;
-    width: 30px;
-    display: flex;
+    margin: 0px 10px 0px 10px;
+    width: 100px;
     justify-content: center;
 }
 
 .intro__icon {
-    height: 1.1428rem;
+    height: 50px;
     vertical-align: text-bottom;
 }
 
