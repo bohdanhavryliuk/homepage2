@@ -14,8 +14,7 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #2e1f0845;
 }
 
 .container {
@@ -27,7 +26,7 @@ body {
 .fh {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .fv {
@@ -81,9 +80,8 @@ body {
 
 .contact-info__header {
     color: var(--primary-text-color);
-    margin-bottom: 15px;
+    margin-bottom: 35px;
     text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
 }
 
 .contact-info__sub-header {
@@ -94,7 +92,7 @@ body {
 .contact-info__block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .contact-info__block--center {
@@ -129,12 +127,12 @@ body {
 }
 
 .contact-info__avatar {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    /* border-radius: 50%; */
+    width: 150px;
+    height: 198px;
     object-fit: cover;
-    border: 3px solid;
-    border-color: var(--text-decoration-color);
+    border: 2px solid;
+    border-color: var(--icon-color);
 }
 
 
@@ -143,17 +141,17 @@ body {
 .intro {
     display: flex;
     justify-content: start;
+    margin-left: 10px;
 }
 
 .intro__icon-wrapper {
-    margin-right: 30px;
-    width: 30px;
-    display: flex;
+    margin: 0px 10px 0px 10px;
+    width: 100px;
     justify-content: center;
 }
 
 .intro__icon {
-    height: 1.1428rem;
+    height: 50px;
     vertical-align: text-bottom;
 }
 
@@ -166,18 +164,18 @@ body {
     text-align: justify;
 }
 
-.skills__header {
+
+.section__text {
+    color: var(--secondary-text-color);
+    text-align: center;
+}
+
+
+.section__header {
     color: var(--secondary-text-color);
     text-align: center;
     margin-bottom: 15px;
 }
-
-.skills__text {
-    color: var(--secondary-text-color);
-    text-align: justify;
-}
-
-
 
 /* Experience and additonal info styles */
 
@@ -248,7 +246,7 @@ body {
     color: var(--durability-text-color);
     text-align: left;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .additional-info__education-university-speciality {
@@ -257,7 +255,7 @@ body {
     margin-bottom: 10px;
 }
 
-.additional-info__education-university-name {
+.additional-info__education-university-data {
     color: var(--secondary-text-color);
 }
 
@@ -273,4 +271,15 @@ body {
 
 .additional-info__languages-item {
     color: var(--secondary-text-color);
+}
+
+.additional-info__education-university-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.additional-info__education-university {
+    display: flex;
+    justify-content: center;
 }
